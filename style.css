@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(34, 95, 104);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: futura;
+}
+
+.panel{
+    width: 80%;
+    height: 80%;
+    border-radius: 15px;
+    background-color: rgb(55, 179, 179);
+    overflow: hidden;
+}
+
+.panelTop{
+    max-width: 100%;
+    height: 60px;
+    background-color: rgb(28, 66, 66);
+    display: flex;
+    padding: 0px 25vw;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.box{
+    width: 35px;
+    height: 35px;
+    border: solid rgb(137, 136, 136);
+    background-color: white;
+    border-radius: 2px;
+    color: rgb(0, 0, 0);
+}
+
+
+.elem{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+}
+
+.panelBottom{
+    max-width:100%;
+    max-height: calc(100% - 60px);
+    padding: 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bubble{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(170, 241, 241);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.bubble:hover{
+    background-color: rgb(130, 193, 193);
+}
+/* 
+.panelBottom h2{
+    
+} */
+
+.finishScore{
+    display: flex;
+    flex-direction: column;
+}
+
+.panelBottom button{
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: rgba(56, 248, 248, 0.262);
+    border: solid rgb(26, 46, 46);
+    cursor: pointer;
+}
+
+@media (max-width: 980px){
+    .panelTop{
+        gap: 11px;
+    }
+}
